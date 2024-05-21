@@ -100,7 +100,7 @@ export const AuroraBackground = ({
         </div>
         <div className="flex w-[75%]">
         <FlipWords words={['Search','Sort','Filter'
-        ]} className="font-bold text-[5vw] w-[25%] flex justify-end pr-2 text-white"/>
+        ]} className="font-bold text-[5vw] w-[25%] flex justify-end pr-5 text-white"/>
         <h1 className="font-bold text-[5vw] text-white w-[75%]">in realtime LLM Model</h1>
         </div>
         <h1 className="text-[2.5vw] font-thin pb-5 text-white">Join 100+ people in exporing the world of lamaLLM</h1>
