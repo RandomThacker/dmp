@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Prisa Llama
 
-## Getting Started
+## Techstack 
+ Langchain , GroqCloud , Nextjs , Prisma , NeonDB (Serverless postgres)
 
-First, run the development server:
+It takes prisma schema , user text , and converts it to raw sql query . 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The sql query is execute and user is presented with a table .
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Challenges 
+ Execution with Date and Time in postgres is tough . We need to train the model better . Lastly , it is very expensive to run this model on premise without adequate capex . For the most part , providers like groq can solve this . 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Improvements  
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+For date and time queries : Make a better interface for inputing time , being able to convert date time queries must be easier . I would suggest using a command bar in chat . 
 
-To learn more about Next.js, take a look at the following resources:
+/date : (write your date) [Notion style]
+/time : (write your time) [Notion style]
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+We can avoid training cost and save costs . UI validation will make the job much easier .
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+We can also use openAI provider alone . Since we will not be sending personal data anymore . Just the schema instead . It will be dirt cheap as compared to hosting LLM on premise .
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
