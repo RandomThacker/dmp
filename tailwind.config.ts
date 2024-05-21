@@ -63,6 +63,7 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+    
         aurora: {
           from: {
             backgroundPosition: "50% 50%, 50% 50%",
@@ -84,6 +85,7 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         aurora: "aurora 60s linear infinite",
+        spotlight: "spotlight 2s ease .75s 1 forwards",
       },
     },
   },
